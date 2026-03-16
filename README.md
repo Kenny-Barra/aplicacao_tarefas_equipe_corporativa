@@ -294,7 +294,7 @@ TASK ||--o{ NOTIFICATION : gera
 
 ## Workflow: Criação de Tarefa
 
-
+![Workflow - Criação de Tarefa](Imagens/WorkFlows/criacao-de-tarefa.png)
 
 Fluxo:
 
@@ -308,7 +308,7 @@ Fluxo:
 
 ## Workflow: Edição de Tarefa
 
-
+![Workflow - Edição de Tarefa](Imagens/WorkFlows/edicao-de-tarefa.png)
 
 Fluxo:
 
@@ -320,7 +320,7 @@ Fluxo:
 
 ## Workflow: Exclusão de Tarefa
 
-
+![Workflow - Exclusão de Tarefa](Imagens/WorkFlows/exclusao-de-tarefa.png)
 
 Fluxo:
 
@@ -332,7 +332,7 @@ Fluxo:
 
 ## Workflow: Convite para Equipe
 
-
+![Workflow - Convite para equipe](Imagens/WorkFlows/convite-para-equipe.png)
 
 Fluxo:
 
@@ -345,7 +345,7 @@ Fluxo:
 
 ## Workflow: Cadastro via Convite
 
-
+![Workflow - Cadastro via convite](Imagens/WorkFlows/cadastro-via-convite.png)
 
 Fluxo:
 
@@ -359,7 +359,7 @@ Fluxo:
 
 ## Workflow: Recuperação de Senha
 
-
+![Workflow - Recuperação de senha](Imagens/WorkFlows/recuperacao-de-senha.png)
 
 Fluxo:
 
@@ -375,37 +375,37 @@ Fluxo:
 
 ## Tela de Login
 
-![login](images/login.png)
+![Tela de login](Imagens/Telas/login.png)
 
 ------------------------------------------------------------------------
 
 ## Tela de Cadastro
 
-![signup](images/signup.png)
+![Tela de Cadastro](Imagens/Telas/cadastro.png)
 
 ------------------------------------------------------------------------
 
 ## Recuperação de Senha
 
-![reset](images/reset_password.png)
+![Tela de Recuperação de senha](Imagens/Telas/recuperar-senha.png)
 
 ------------------------------------------------------------------------
 
 ## Dashboard
 
-![dashboard](images/dashboard.png)
+![Tela dashboard](Imagens/Telas/dashboard.png)
 
 ------------------------------------------------------------------------
 
 ## Tela Teams (Gerenciamento de Equipe)
 
-![teams](images/teams.png)
+![Tela teams](Imagens/Telas/teams.png)
 
 ------------------------------------------------------------------------
 
 ## Tela Profile
 
-![profile](images/profile.png)
+![Tela profile](Imagens/Telas/profile.png)
 
 ------------------------------------------------------------------------
 
