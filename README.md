@@ -1,278 +1,368 @@
-# TeamFlow
+# 🚀 TeamFlow --- Sistema de Gestão de Equipes e Tarefas
 
-## Descrição do Projeto
+## 📌 Visão Geral
 
-O **TeamFlow** é uma aplicação web desenvolvida na plataforma **Bubble** com foco na **gestão de equipes, tarefas e notificações**. O sistema foi pensado para resolver dificuldades comuns na organização de times, como distribuição de tarefas, controle de membros, convites para equipe e acompanhamento das atividades.
+O **TeamFlow** é uma aplicação web desenvolvida na plataforma **Bubble**
+com o objetivo de facilitar a gestão de equipes e a organização de
+tarefas colaborativas.
 
-A proposta do projeto é oferecer uma solução prática, intuitiva e funcional para ambientes colaborativos, utilizando abordagem **no-code/low-code**, reduzindo tempo de desenvolvimento e facilitando futuras manutenções.
+A aplicação permite: - criação e gerenciamento de equipes - convite de
+novos membros - criação e atribuição de tarefas - notificações
+automáticas quando tarefas são atribuídas
 
----
+O projeto demonstra o uso de **No-Code / Low-Code** para desenvolvimento
+de aplicações completas.
 
-## Problema que a aplicação resolve
+------------------------------------------------------------------------
 
-Em muitos contextos acadêmicos e profissionais, equipes enfrentam problemas como:
+# ❗ Problema
 
-- dificuldade em organizar tarefas entre os membros
-- falta de visibilidade sobre responsáveis e andamento
-- ausência de centralização das informações do time
-- dificuldade para adicionar ou gerenciar membros
-- falta de notificações sobre novas atribuições
+Equipes frequentemente enfrentam dificuldades como:
 
-O **TeamFlow** foi criado para centralizar essas operações em um único sistema, melhorando a organização, a comunicação interna e a produtividade.
+-   falta de organização das tarefas
+-   dificuldade de acompanhar responsabilidades
+-   ausência de notificações quando algo muda
+-   dificuldade em gerenciar convites para novos membros
 
----
+O **TeamFlow** resolve esses problemas centralizando o gerenciamento da
+equipe e das tarefas.
 
-## Público-alvo
+------------------------------------------------------------------------
 
-A aplicação foi pensada para:
+# 🎯 Objetivo do Projeto
 
-- equipes acadêmicas
-- pequenos times de trabalho
-- grupos de projeto
-- usuários que precisam organizar tarefas de forma simples
-- pessoas que buscam uma solução web funcional sem desenvolvimento tradicional
+Desenvolver uma aplicação que permita:
 
----
+-   organização de tarefas em equipes
+-   gerenciamento de membros
+-   automação de notificações
+-   controle de permissões por papel de usuário
 
-## Benefícios esperados
+------------------------------------------------------------------------
 
-- melhor organização das tarefas
-- definição clara de responsáveis
-- controle de equipes e membros
-- envio de convites para novos integrantes
-- notificações para ações importantes
-- interface simples e intuitiva
-- redução de erros manuais na gestão do time
+# 🛠 Tecnologias Utilizadas
 
----
+  Tecnologia   Uso
+  ------------ ------------------------------
+  Bubble       Desenvolvimento da aplicação
+  GitHub       Documentação do projeto
+  Markdown     Estrutura da documentação
 
-## Justificativa pelo uso de Bubble (No-Code/Low-Code)
+O **GitHub foi utilizado apenas para documentação**, enquanto o
+desenvolvimento foi feito totalmente no Bubble.
 
-A escolha do **Bubble** foi estratégica por permitir:
+------------------------------------------------------------------------
 
-- criação rápida de aplicações web funcionais
-- desenvolvimento visual sem necessidade de codificação tradicional
-- modelagem de banco de dados integrada
-- workflows automatizados com facilidade
-- publicação e testes rápidos
-- manutenção simplificada
+# ⚙️ Funcionalidades
 
-### Vantagens do Bubble
-- alta produtividade
-- menor tempo de desenvolvimento
-- menor custo inicial
-- facilidade para prototipação e iteração
-- interface visual para lógica e banco de dados
+## 👤 Gestão de Usuários
 
-### Limitações
-- menor flexibilidade do que programação tradicional em cenários muito complexos
-- dependência da plataforma
-- algumas validações avançadas podem exigir soluções alternativas
+-   cadastro de usuários
+-   login
+-   recuperação de senha
+-   edição de perfil
+-   alteração de senha
+-   atualização de foto de perfil
 
-Mesmo com essas limitações, para a proposta do projeto o Bubble foi a escolha mais adequada, pois atendeu bem à necessidade de entregar uma aplicação funcional, organizada e documentada.
+------------------------------------------------------------------------
 
----
+## 👥 Gestão de Equipes
 
-## Funcionalidades principais
+Dependendo do papel do usuário:
 
-O sistema conta com as seguintes funcionalidades:
+**Gestor** - criar equipe - editar equipe - excluir equipe
 
-- cadastro e login de usuários
-- gerenciamento de perfil
-- alteração de senha
-- criação de equipes
-- edição e exclusão de equipes
-- convite de novos membros por e-mail
-- aceitação de convite por link
-- listagem de membros da equipe
-- criação de tarefas
-- atribuição de tarefa a um responsável
-- painel com visão geral das tarefas
-- notificações de tarefas atribuídas
-- marcação de notificações como lidas
+**Gestor e Líder** - convidar membros - remover membros
 
----
+**Todos** - visualizar membros da equipe
 
-## Modelagem de Dados
+------------------------------------------------------------------------
 
-A aplicação foi construída com base nas seguintes entidades principais:
+## ✅ Gestão de Tarefas
 
-### 1. User
-Representa os usuários do sistema.
+Todos os membros podem:
 
-**Campos principais:**
-- `name`
-- `email`
-- `profile_photo`
-- `role`
-- `team`
+-   criar tarefas
+-   visualizar tarefas
+-   editar tarefas
+-   excluir tarefas
 
----
+Cada tarefa pode ser atribuída **apenas a um membro da equipe**.
 
-### 2. Team
-Representa uma equipe dentro do sistema.
+Campos principais da tarefa: - título - descrição - prioridade - data de
+vencimento - responsável
 
-**Campos principais:**
-- `name`
-- `description`
-- `leader`
+------------------------------------------------------------------------
 
----
+## 📧 Sistema de Convites
 
-### 3. Task
-Representa as tarefas cadastradas no sistema.
+Novos membros entram na equipe através de um **link de convite**.
 
-**Campos principais:**
-- `title`
-- `description`
-- `priority`
-- `status`
-- `due_date`
-- `assignee`
-- `team`
+Cada convite possui:
 
----
+-   e-mail do convidado
+-   papel do usuário
+-   equipe
+-   token único
+-   data de expiração
+-   status
 
-### 4. Invitation
-Representa os convites enviados para ingresso em equipes.
+------------------------------------------------------------------------
 
-**Campos principais:**
-- `email`
-- `role`
-- `team`
-- `token`
-- `status`
-- `expires_at`
+## 🔐 Validações Implementadas
 
----
+-   verificação de link de convite válido
+-   verificação de convite expirado
+-   bloqueio de convite para usuários que já possuem equipe
+-   validação de senha
+-   validação de confirmação de senha
+-   validação de campos obrigatórios
 
-### 5. Notification
-Representa as notificações exibidas ao usuário.
+------------------------------------------------------------------------
 
-**Campos principais:**
-- `message`
-- `recipient`
-- `is_read`
-- `task`
+# 👮 Sistema de Permissões
 
----
+### 🧑‍💼 Gestor
 
-## Relacionamentos
+-   criar equipes
+-   editar equipes
+-   excluir equipes
+-   convidar membros
+-   remover membros
+-   criar tarefas
+-   editar tarefas
+-   excluir tarefas
 
-Os principais relacionamentos do sistema são:
+### 👨‍💻 Líder
 
-- um **usuário** pertence a uma **equipe**
-- uma **equipe** possui vários **usuários**
-- uma **tarefa** pertence a uma **equipe**
-- uma **tarefa** pode ser atribuída a um **usuário**
-- um **convite** pertence a uma **equipe**
-- uma **notificação** pertence a um **usuário**
-- uma **notificação** pode estar vinculada a uma **tarefa**
+-   editar equipe
+-   convidar membros
+-   remover membros
+-   criar tarefas
+-   editar tarefas
+-   excluir tarefas
 
----
+### 👤 Membro
 
-## Regras de Negócio
+-   visualizar equipe
+-   visualizar membros
+-   criar tarefas
+-   editar tarefas
+-   excluir tarefas
+-   visualizar notificações
 
-Algumas regras implementadas no sistema:
+------------------------------------------------------------------------
 
-- apenas usuários autorizados podem visualizar determinados dados
-- convites são enviados por e-mail com link de acesso
-- convites possuem status e validade
-- tarefas podem ser atribuídas a membros da equipe
-- ao atribuir uma tarefa, o sistema cria uma notificação para o responsável
-- notificações podem ser marcadas como lidas
-- o sistema diferencia papéis como membro, líder e gestor
-- a alteração de senha exige confirmação correta
+# 🔔 Sistema de Notificações
 
----
+Quando uma tarefa é atribuída a um usuário:
 
-## Workflows principais
+1.  o sistema cria uma notificação
+2.  a notificação aparece no **Dashboard**
+3.  o usuário pode marcar como **lida**
 
-### 1. Criação de equipe
-Permite cadastrar uma nova equipe, validando campos obrigatórios antes da criação.
+------------------------------------------------------------------------
 
-### 2. Envio de convite
-Ao adicionar um membro, o sistema cria um convite com token, associação à equipe e envio por e-mail.
+# 🖥 Interface da Aplicação
 
-### 3. Aceitação de convite
-O usuário acessa o link enviado por e-mail, cria sua conta e passa a integrar a equipe correspondente.
+## Dashboard
 
-### 4. Criação de tarefa
-O usuário pode cadastrar uma nova tarefa e definir informações como título, descrição, prioridade e responsável.
+Mostra: - notificações - tarefas da equipe - resumo da atividade
 
-### 5. Atribuição de tarefa
-Quando uma tarefa é atribuída a um usuário, o sistema cria automaticamente uma notificação.
+## Teams
 
-### 6. Notificações
-As notificações são listadas no sistema e o usuário pode marcá-las como lidas.
+Mostra: - equipe atual - membros da equipe - convites enviados
 
-### 7. Edição de perfil
-O usuário pode atualizar dados como nome, cargo e foto de perfil.
+## Profile
 
-### 8. Alteração de senha
-O sistema possui fluxo para mudança de senha e também recuperação via link de redefinição.
+Permite: - editar perfil - alterar senha - visualizar equipe -
+visualizar membros
 
----
+------------------------------------------------------------------------
 
-## Interface e Navegação
+# 🧠 Arquitetura do Sistema
 
-A aplicação foi organizada em telas principais para facilitar a usabilidade:
+## Fluxo visual da aplicação
+
+``` mermaid
+flowchart TD
+    A[Usuário acessa a aplicação] --> B[Login]
+    B --> C{Já pertence a uma equipe?}
 
-- **Dashboard**
-  - visão geral das tarefas
-  - indicadores e filtros
+    C -- Não --> D[Aguardar convite]
+    C -- Sim --> E[Entrar no Dashboard]
 
-- **Equipes**
-  - gerenciamento de equipes
-  - visualização de membros
-  - convites enviados
+    E --> F[Visualizar equipe]
+    E --> G[Visualizar tarefas]
+    E --> H[Visualizar notificações]
 
-- **Perfil**
-  - dados pessoais
-  - foto de perfil
-  - equipe atual
-  - notificações
+    F --> I[Gestor ou Líder convidam membro]
+    I --> J[Enviar convite por e-mail]
+    J --> K[Link com token de convite]
 
-A navegação foi pensada para ser simples, com menu lateral e estrutura visual clara.
+    K --> L[Usuário acessa o link]
+    L --> M{Convite válido?}
 
----
+    M -- Não --> N[Acesso bloqueado]
+    M -- Sim --> O[Criar conta]
 
-## Publicação e manutenção
+    O --> P[Usuário entra na equipe]
 
-### Publicação
-A aplicação foi desenvolvida e testada no ambiente da plataforma Bubble, com possibilidade de publicação em link web.
+    P --> Q[Usuário cria tarefa]
+    Q --> R[Tarefa atribuída a um membro]
+    R --> S[Sistema gera notificação]
+    S --> H
+```
 
-### Estratégias de manutenção
-- atualização dos workflows conforme necessidade
-- revisão das regras de privacidade
-- manutenção do banco de dados
-- ajustes visuais e de usabilidade
-- evolução de funcionalidades futuras
+## Explicação do fluxo
 
----
+1.  O usuário acessa a aplicação e realiza login.
+2.  O sistema identifica se ele já pertence a uma equipe.
+3.  Gestores ou líderes podem enviar convites para novos membros.
+4.  O convite gera um link com token.
+5.  Ao acessar o link, o sistema valida:
+    -   token
+    -   expiração
+    -   status do convite
+    -   se o usuário já está em uma equipe
+6.  Após entrar na equipe, usuários podem criar tarefas.
+7.  Quando uma tarefa é atribuída, o sistema gera uma notificação
+    automática.
 
-## Tecnologias utilizadas
+------------------------------------------------------------------------
 
-- **Bubble** — desenvolvimento da aplicação web
-- **GitHub** — versionamento e documentação
-- **Markdown** — documentação do projeto
-- **E-mail/fluxo de convite** — para ingresso em equipes
+# 🗄 Estrutura de Dados
 
----
+## Diagrama visual das entidades
 
-## Como acessar e testar
+``` mermaid
+erDiagram
+    USER {
+        string name
+        string email
+        string role
+        string profile_photo
+        Team team
+    }
 
-1. Acesse o link público da aplicação Bubble
-2. Faça login ou cadastro
-3. Crie ou visualize equipes
-4. Cadastre tarefas
-5. Atribua tarefas a membros
-6. Verifique as notificações
-7. Teste o fluxo de convite e perfil
+    TEAM {
+        string name
+        string description
+        User leader
+    }
 
-> **Link da aplicação:** `ADICIONE_AQUI_O_LINK_DA_SUA_APLICACAO`
+    TASK {
+        string title
+        string description
+        string priority
+        date due_date
+        User assignee
+        Team team
+    }
 
----
+    INVITATION {
+        string email
+        string role
+        string token
+        date expires_at
+        string status
+        Team team
+    }
 
-## Prints da aplicação
+    NOTIFICATION {
+        string message
+        boolean is_read
+        User recipient
+        Task task
+    }
 
+    USER }o--|| TEAM : pertence
+    TEAM ||--o{ TASK : possui
+    TEAM ||--o{ INVITATION : gera
+    USER ||--o{ TASK : responsavel
+    USER ||--o{ NOTIFICATION : recebe
+    TASK ||--o{ NOTIFICATION : gera
+```
+
+## Campos principais
+
+**User** - name - email - role - profile_photo - team
+
+**Team** - name - description - leader
+
+**Task** - title - description - priority - due_date - assignee - team
+
+**Invitation** - email - role - team - token - expires_at - status
+
+**Notification** - message - is_read - recipient - task
+
+------------------------------------------------------------------------
+
+# 🌐 Link da Aplicação
+
+A aplicação pode ser acessada através do seguinte link:
+
+https://SEU-LINK-AQUI.bubbleapps.io
+
+------------------------------------------------------------------------
+
+# 🧪 Como Testar
+
+## Login de demonstração
+
+Email: admin@teamflow.com
+
+Senha: admin123
+
+## Fluxos que podem ser testados
+
+### 1. Cadastro via convite
+
+1.  Acesse **Teams**
+2.  Clique em **Convidar membro**
+3.  Envie um convite
+4.  Use o link para criar uma nova conta
+
+### 2. Recuperação de senha
+
+1.  Clique em **Esqueci minha senha**
+2.  Digite o e-mail
+3.  Abra o link enviado
+4.  Defina uma nova senha
+
+### 3. Tarefas
+
+-   criar
+-   editar
+-   excluir
+-   atribuir responsável
+
+### 4. Dashboard
+
+-   visualizar notificações
+-   marcar notificação como lida
+
+### 5. Profile
+
+-   editar perfil
+-   alterar senha
+-   visualizar equipe e membros
+
+------------------------------------------------------------------------
+
+# 📸 Evidências do Projeto
+
+
+
+------------------------------------------------------------------------
+
+# 👨‍💻 Autor
+
+Kennedy Pereira Barra
+
+------------------------------------------------------------------------
+
+# 📚 Observação
+
+Projeto desenvolvido para fins acadêmicos utilizando **Bubble (No-Code /
+Low-Code)**.
