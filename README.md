@@ -294,6 +294,8 @@ TASK ||--o{ NOTIFICATION : gera
 
 ## Workflow: Criação de Tarefa
 
+
+
 Fluxo:
 
 1.  Usuário preenche formulário
@@ -306,6 +308,8 @@ Fluxo:
 
 ## Workflow: Edição de Tarefa
 
+
+
 Fluxo:
 
 1.  Sistema carrega dados da tarefa
@@ -316,6 +320,8 @@ Fluxo:
 
 ## Workflow: Exclusão de Tarefa
 
+
+
 Fluxo:
 
 1.  Usuário seleciona tarefa
@@ -325,6 +331,8 @@ Fluxo:
 ------------------------------------------------------------------------
 
 ## Workflow: Convite para Equipe
+
+
 
 Fluxo:
 
@@ -337,6 +345,8 @@ Fluxo:
 
 ## Workflow: Cadastro via Convite
 
+
+
 Fluxo:
 
 1.  Usuário acessa link de convite
@@ -348,6 +358,8 @@ Fluxo:
 ------------------------------------------------------------------------
 
 ## Workflow: Recuperação de Senha
+
+
 
 Fluxo:
 
@@ -363,15 +375,11 @@ Fluxo:
 
 ## Tela de Login
 
-📸 Inserir print abaixo:
-
 ![login](images/login.png)
 
 ------------------------------------------------------------------------
 
 ## Tela de Cadastro
-
-📸 Inserir print abaixo:
 
 ![signup](images/signup.png)
 
@@ -379,15 +387,11 @@ Fluxo:
 
 ## Recuperação de Senha
 
-📸 Inserir print abaixo:
-
 ![reset](images/reset_password.png)
 
 ------------------------------------------------------------------------
 
 ## Dashboard
-
-📸 Inserir print abaixo:
 
 ![dashboard](images/dashboard.png)
 
@@ -395,23 +399,11 @@ Fluxo:
 
 ## Tela Teams (Gerenciamento de Equipe)
 
-📸 Inserir print abaixo:
-
 ![teams](images/teams.png)
 
 ------------------------------------------------------------------------
 
-## Tela de Tarefas
-
-📸 Inserir print abaixo:
-
-![tasks](images/tasks.png)
-
-------------------------------------------------------------------------
-
 ## Tela Profile
-
-📸 Inserir print abaixo:
 
 ![profile](images/profile.png)
 
@@ -423,13 +415,15 @@ Fluxo:
 
 Abra o link da aplicação.
 
+Link: https://teamflow-26022.bubbleapps.io/version-test/login
+
 ------------------------------------------------------------------------
 
 ### 2. Login de demonstração
 
-Email: admin@teamflow.com
+Email: teste@gmail.com
 
-Senha: admin123
+Senha: 123456
 
 ------------------------------------------------------------------------
 
@@ -447,24 +441,7 @@ Senha: admin123
 
 # 🎥 Vídeo Pitch do Projeto
 
-Inserir link do vídeo abaixo:
-
 🎬 Pitch:
-
-\[COLOCAR_LINK_DO_VIDEO_AQUI\]
-
-------------------------------------------------------------------------
-
-# 📸 Evidências do Projeto
-
-Crie uma pasta chamada:
-
-images/
-
-Exemplo:
-
-images/ login.png signup.png dashboard.png teams.png tasks.png
-profile.png database.png workflows.png
 
 ------------------------------------------------------------------------
 
