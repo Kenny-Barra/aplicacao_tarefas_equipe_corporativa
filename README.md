@@ -1,5 +1,11 @@
 # 🚀 TeamFlow --- Sistema de Gestão de Equipes e Tarefas
 
+## 🎥 Vídeo Pitch do Projeto
+
+🎬 Pitch: https://youtu.be/-NOXLuM-K6M
+
+------------------------------------------------------------------------
+
 ## 📌 Visão Geral
 
 O **TeamFlow** é uma aplicação web desenvolvida utilizando a plataforma
@@ -580,12 +586,6 @@ O avaliador pode validar os seguintes fluxos do sistema:
 - convite de membros
 - cadastro via convite
 - notificações no dashboard
-
-------------------------------------------------------------------------
-
-# 🎥 Vídeo Pitch do Projeto
-
-🎬 Pitch:
 
 ------------------------------------------------------------------------
 
