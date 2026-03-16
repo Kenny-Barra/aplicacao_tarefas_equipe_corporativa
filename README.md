@@ -411,31 +411,175 @@ Fluxo:
 
 # 🧪 Como Testar a Aplicação
 
-### 1. Acessar a aplicação
+## 1️⃣ Acessar a Aplicação
 
-Abra o link da aplicação.
+Abra a aplicação através do link abaixo:
+
+🔗 **Link da aplicação**
 
 Link: https://teamflow-26022.bubbleapps.io/version-test/login
 
 ------------------------------------------------------------------------
 
-### 2. Login de demonstração
+## 2️⃣ Login de Demonstração
+
+Para facilitar a avaliação do sistema, um usuário administrador foi disponibilizado.
+
+**Credenciais de acesso**
 
 Email: teste@gmail.com
 
 Senha: 123456
 
+Esse usuário possui permissões de **Gestor**, permitindo testar todas as funcionalidades da aplicação.
+
 ------------------------------------------------------------------------
 
-### 3. Fluxos que podem ser testados
+## 3️⃣ Testar Criação de Tarefas
 
--   criação de tarefas
--   edição de tarefas
--   exclusão de tarefas
--   convite de membros
--   cadastro via convite
--   recuperação de senha
--   notificações no dashboard
+1. Acesse o **Dashboard**.
+2. Clique em **Criar tarefa**.
+3. Preencha os campos obrigatórios:
+   - título
+   - descrição
+   - prioridade
+   - data de vencimento
+   - responsável
+4. Clique em **Salvar**.
+
+Resultado esperado:
+
+- A tarefa será criada.
+- A tarefa aparecerá na lista de tarefas da equipe.
+- Se houver um responsável definido, será criada uma **notificação para esse usuário**.
+
+------------------------------------------------------------------------
+
+## 4️⃣ Testar Edição de Tarefas
+
+1. Acesse a lista de tarefas.
+2. Clique em **Editar tarefa**.
+3. Altere qualquer informação da tarefa.
+4. Clique em **Salvar**.
+
+Resultado esperado:
+
+- A tarefa será atualizada no sistema.
+
+------------------------------------------------------------------------
+
+## 5️⃣ Testar Exclusão de Tarefas
+
+1. Selecione uma ou mais tarefas.
+2. Clique em **Excluir tarefa**.
+3. Confirme a exclusão no popup.
+
+Resultado esperado:
+
+- A tarefa será removida da lista.
+
+------------------------------------------------------------------------
+
+## 6️⃣ Testar Convite para Membros
+
+1. Acesse a aba **Teams**.
+2. Clique em **Convidar membro**.
+3. Informe:
+   - e-mail do convidado
+   - papel do usuário (líder ou membro)
+4. Clique em **Enviar convite**.
+
+Resultado esperado:
+
+- Um convite será criado no sistema.
+- O convite aparecerá na lista de **convites enviados**.
+
+------------------------------------------------------------------------
+
+## 7️⃣ Testar Cadastro via Convite
+
+1. Utilize o e-mail convidado.
+2. Abra o **link de convite recebido**.
+3. A página de cadastro será aberta automaticamente.
+4. Crie uma conta.
+
+Resultado esperado:
+
+- O usuário será automaticamente associado à equipe.
+
+------------------------------------------------------------------------
+
+## 8️⃣ Testar Recuperação de Senha
+
+1. Na tela de login, clique em **Esqueci minha senha**.
+2. Insira o e-mail do usuário.
+3. Clique em **Enviar link de recuperação**.
+4. Acesse o link enviado por e-mail.
+5. Defina uma nova senha.
+
+Resultado esperado:
+
+- A senha do usuário será atualizada.
+
+------------------------------------------------------------------------
+
+## 9️⃣ Testar Notificações
+
+1. Crie uma tarefa e atribua a um usuário.
+2. Faça login com esse usuário.
+3. Acesse o **Dashboard**.
+
+Resultado esperado:
+
+- Uma notificação aparecerá informando que uma nova tarefa foi atribuída.
+
+O usuário também pode marcar a notificação como **lida**.
+
+------------------------------------------------------------------------
+
+## 🔟 Testar Permissões de Usuários
+
+Para validar o sistema de permissões, recomenda-se criar usuários com diferentes papéis:
+
+### Gestor
+Pode:
+
+- criar equipes
+- editar equipes
+- excluir equipes
+- convidar membros
+- remover membros
+
+### Líder
+Pode:
+
+- editar equipe
+- convidar membros
+- remover membros
+
+### Membro
+Pode:
+
+- visualizar equipe
+- criar tarefas
+- editar tarefas
+- excluir tarefas
+
+------------------------------------------------------------------------
+
+## ✔️ Fluxos principais que podem ser testados
+
+O avaliador pode validar os seguintes fluxos do sistema:
+
+- cadastro de usuário
+- login
+- recuperação de senha
+- criação de tarefas
+- edição de tarefas
+- exclusão de tarefas
+- convite de membros
+- cadastro via convite
+- notificações no dashboard
 
 ------------------------------------------------------------------------
 
